@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" type="image/x-icon" href="/JavaScriptTasks/TIC-TAC-TOE/favicon.png">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="info">Current player is: <span class="player">X</span></div>
+        <div class="header">
+            <input type="number" min="3" value="3" max="6"  id="inputNumber">
+            <button type="submit" id="createBoardBtn">Create board</button>
+        </div>
+        <div class="board" id="board">
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+            <div class ="block"></div>
+        </div>
+    </div>
+
+    <div class="message">
+        <div class="window">
+            <div class="xo">Tic Tac Toe</div>
+            <div class="winner">Winner is : <span class="winplayer"></span></div>
+            <button class="btn" type="button">Play Again</button>
+        </div>
+    </div>
+
+    <footer>made by: Hovo Petrosyan</footer>
+    <script src="script.js"></script>
+</body>
+</html>

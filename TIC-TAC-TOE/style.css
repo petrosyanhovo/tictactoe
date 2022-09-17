@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Macondo', cursive;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.header {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    font-family: 'Roboto', sans-serif;  
+    font-size: 20px;
+}
+
+.header input[type ='number'] {
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    height: 30px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.header button {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 5px;
+    height: 30px;
+    background-color: #29B6DC;
+    cursor: pointer;
+    border: none;
+    padding: 0 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(61, 61, 61);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.board i .fa-xmark {
+    font-size: 2rem;
+    color: red;
+}
+
+.board {
+    width: 240px;
+    height: 240px;
+    background-color: #29B6DC;
+}
+
+.block {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+    /* background-color: rgb(76, 76, 76); */
+}
+
+.block .win {
+    background-color: red;
+}
+
+.notallow {
+    cursor: not-allowed;
+}
+
+.message .winner{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0;
+}
+
+.message .btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+.message {
+    background-color: #00000056;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: -1000px;
+    text-align: center;
+}
+
+.message.active {
+    top: 0;
+}
+
+.message .window {
+    margin: 100px auto;
+    background: #29B6DC;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.29)    ;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.message .window .winner {
+    font-size: 30px;
+    color: white;
+}
+
+.message .window .xo {
+    font-size: 40px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.message .window .btn {
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: rgb(36, 36, 36);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
